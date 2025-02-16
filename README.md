@@ -1,4 +1,13 @@
+<div align="center">
+
 # Perplexity Advanced MCP
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/code-yeongyu/perplexity-advanced-mcp)
+[![PyPI](https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/perplexity-advanced-mcp)
+
+</div>
+
+---
 
 ## Overview
 
