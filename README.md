@@ -131,9 +131,9 @@ The package includes an MCP search tool integrated via the `ask_perplexity` func
 
 ## Development Background & Philosophy
 
-This project emerged from my personal curiosity and experimentation. Following the recent ["vibe coding"](https://x.com/karpathy/status/1886192184808149383) trend, over 95% of the code was written through [Cline](https://cline.bot/) + [Cursor](https://www.cursor.com/) IDE. They say "talk is cheap, show me the code" - well, with [Wispr Flow](https://wisprflow.ai/)'s speech-to-text magic, I literally just talked and the code showed up! Most of the development was done by me saying things like "Wrie me the code for x y z, fix the bug here x y z." and pressing enter. Remarkably, creating this fully functional project took less than a few hours.
+This project emerged from my personal curiosity and experimentation. Following the recent ["vibe coding"](https://x.com/karpathy/status/1886192184808149383) trend, over 95% of the code was written through [Cline](https://cline.bot/) + [Cursor](https://www.cursor.com/) IDE. They say "talk is cheap, show me the code" - well, with [Wispr Flow](https://wisprflow.ai/)'s speech-to-text magic, I literally just talked and the code showed up! Most of the development was done by me saying things like "Write me the code for x y z, fix the bug here x y z." and pressing enter. Remarkably, creating this fully functional project took less than a few hours.
 
-From project scaffolding to file structure, everything was written and reviewed through LLM. As a human developer, my role was to:
+From project scaffolding to file structure, everything was written and reviewed through LLM. Even the GitHub Actions workflow for PyPI publishing and the release approval process were handled through Cursor. As a human developer, my role was to:
 
 - Starting and stopping the MCP server to help AI conduct proper testing
 - Copying and providing error logs when issues occurred
