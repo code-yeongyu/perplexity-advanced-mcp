@@ -91,7 +91,7 @@ def process_attachments(attachment_paths: list[str]) -> str:
 @mcp.tool(
     name="ask_perplexity",
     description=(
-        """Perplexity is fundamentally an LLM that can search the internet, gather information, and answer users’ queries.
+        """Perplexity is fundamentally an LLM that can search the internet, gather information, and answer users' queries.
 
         For example, let's suppose we want to find out the latest version of Python.
         1. You would search on Google.
@@ -101,7 +101,7 @@ def process_attachments(attachment_paths: list[str]) -> str:
 
         To answer a user's query, Perplexity searches, opens the top search results, finds information on those websites, and then provides the answer.
 
-        Perplexity can be used with two types of queries: simple and complex. Choosing the right query type to fulfill the user’s request is most important.
+        Perplexity can be used with two types of queries: simple and complex. Choosing the right query type to fulfill the user's request is most important.
 
         SIMPLE Query:
         - Cheap and fast (on average, 10x cheaper and 3x faster than complex queries).
@@ -114,10 +114,11 @@ def process_attachments(attachment_paths: list[str]) -> str:
         - Pricing: $1/M input tokens, $5/M output tokens.
 
         Instructions:
-        - When reviewing the user’s request, if you find anything unexpected, uncertain, or questionable, do not hesitate to use the "ask_perplexity" tool to consult Perplexity.
+        - When reviewing the user's request, if you find anything unexpected, uncertain, or questionable, do not hesitate to use the "ask_perplexity" tool to consult Perplexity.
         - Since Perplexity is also an LLM, prompt engineering techniques are paramount.
         - Remember the basics of prompt engineering, such as providing clear instructions, sufficient context, and examples.
-        - Include as much context and relevant files as possible to smoothly fulfill the user’s request.
+        - Include as much context and relevant files as possible to smoothly fulfill the user's request.
+        - IMPORTANT: When adding files as attachments, you MUST use absolute paths (e.g., '/absolute/path/to/file.py'). Relative paths will not work.
 
         Note: All queries must be in English for optimal results.
         """
@@ -163,7 +164,7 @@ async def ask_perplexity(
             f"""
             <system>
             Think or reason about the user's words in as much detail as possible. Summarize everything thoroughly.
-            List all the elements that need to be considered regarding the user’s question or prompt.
+            List all the elements that need to be considered regarding the user's question or prompt.
 
                 <idea-reflection>
                 Form your opinions about these elements from an objective standpoint, avoiding an overly pessimistic or overly optimistic view. Opinions should be specific and realistic.
