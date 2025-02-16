@@ -78,7 +78,7 @@ For the best experience with AI assistants (e.g., [Cursor](https://www.cursor.co
         When reviewing the user's request, if you find anything unexpected, uncertain, or questionable, **and you think you can get answer from the internet**, do not hesitate to use the "ask_perplexity" tool to consult Perplexity. However, if the internet is not required to satisfy users' request, it's meaningless to ask to perplexity.
         Since Perplexity is also an LLM, prompt engineering techniques are paramount.
         Remember the basics of prompt engineering, such as providing clear instructions, sufficient context, and examples
-        Include as much context and relevant files as possible to smoothly fulfill the user's request.
+        Include as much context and relevant files as possible to smoothly fulfill the user's request. When adding files as attachments, make sure they are absolute paths.
     </instruction>
 </perplexity-advanced-mcp>
 ```
