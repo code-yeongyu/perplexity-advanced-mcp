@@ -1,12 +1,12 @@
 [project]
 name = "perplexity-advanced-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = """
 Advanced MCP tool for Perplexity and OpenRouter API integration.
 Supports both simple and complex queries with file attachments.
 Built with AI-first development approach using Cline, Cursor, and Wispr Flow.
 """
-authors = [{ name = "YeonGyu Kim", email = "code.yeongyu@gmail.com" }]
+authors = [{ name = "YeonGyu Kim", email = "public.kim.yeon.gyu@gmail.com" }]
 dependencies = [
     "httpx>=0.28.1",
     "mcp>=1.2.1",
