@@ -1,0 +1,71 @@
+[project]
+name = "perplexity-advanced-mcp"
+version = "0.1.0"
+description = """
+Advanced MCP tool for Perplexity and OpenRouter API integration.
+Supports both simple and complex queries with file attachments.
+Built with AI-first development approach using Cline, Cursor, and Wispr Flow.
+"""
+authors = [{ name = "YeonGyu Kim", email = "code.yeongyu@gmail.com" }]
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=1.2.1",
+    "pydantic>=2.10.6",
+    "setuptools>=75.8.0",
+    "typer>=0.15.1",
+    "tenacity>=8.2.3",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = [
+    "mcp",
+    "perplexity",
+    "openrouter",
+    "ai",
+    "llm",
+    "search",
+    "claude",
+    "cursor",
+    "cline",
+]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/code-yeongyu/perplexity-advanced-mcp"
+Repository = "https://github.com/code-yeongyu/perplexity-advanced-mcp.git"
+"Bug Tracker" = "https://github.com/code-yeongyu/perplexity-advanced-mcp/issues"
+
+[project.scripts]
+perplexity-advanced-mcp = "perplexity_advanced_mcp.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+dev = ["mypy>=1.15.0", "ruff>=0.9.6"]
+
+[tool.ruff]
+line-length = 119
+target-version = "py312"
+lint.select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "UP", # pyupgrade
+    "PT", # pytest
+]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "double"
+docstring-quotes = "double"
+multiline-quotes = "double"
