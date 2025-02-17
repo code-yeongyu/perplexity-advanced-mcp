@@ -22,7 +22,7 @@ Perplexity Advanced MCP는 [OpenRouter](https://openrouter.ai/)와 [Perplexity](
 - **파일 첨부 지원:** 쿼리에 파일 내용을 컨텍스트로 포함하여 더 정확하고 맥락에 맞는 응답 제공
 - **향상된 재시도 로직:** 안정성 향상을 위한 강력한 재시도 메커니즘 구현
 
-전반적으로, 이는 [Cline](https://cline.dev/)이나 [Cursor](https://www.cursor.com/)와 같은 에디터와 통합할 때 코드베이스를 다루는 데 가장 적합한 MCP입니다.
+전반적으로, 이는 [Cline](https://cline.bot/)이나 [Cursor](https://www.cursor.com/)와 같은 에디터와 통합할 때 코드베이스를 다루는 데 가장 적합한 MCP입니다.
 
 ## 기능
 

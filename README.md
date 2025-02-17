@@ -25,7 +25,7 @@ While [perplexity-mcp](https://github.com/jsonallen/perplexity-mcp) provides bas
 - **File Attachment Support:** Allows including file contents as context in your queries, enabling more precise and contextual responses
 - **Enhanced Retry Logic:** Implements robust retry mechanisms for improved reliability
 
-Overall, this is the most suitable MCP for handling codebases when integrated with editors like [Cline](https://cline.dev/) or [Cursor](https://www.cursor.com/).
+Overall, this is the most suitable MCP for handling codebases when integrated with editors like [Cline](https://cline.bot/) or [Cursor](https://www.cursor.com/).
 
 
 ## Features
