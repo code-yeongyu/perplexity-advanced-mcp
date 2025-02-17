@@ -1,6 +1,6 @@
 [project]
 name = "perplexity-advanced-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = """
 Advanced MCP tool for Perplexity and OpenRouter API integration.
 Supports both simple and complex queries with file attachments.
