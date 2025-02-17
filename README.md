@@ -4,6 +4,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/code-yeongyu/perplexity-advanced-mcp)
 [![PyPI](https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/perplexity-advanced-mcp)
+[![smithery badge](https://smithery.ai/badge/@code-yeongyu/perplexity-advanced-mcp)](https://smithery.ai/server/@code-yeongyu/perplexity-advanced-mcp)
 
 [한국어](README-ko.md)
 
@@ -89,6 +90,14 @@ This configuration helps AI assistants better understand when and how to use the
 
 ## Usage
 
+### Installing via Smithery
+
+To install Perplexity Advanced MCP for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@code-yeongyu/perplexity-advanced-mcp):
+
+```bash
+npx -y @smithery/cli install @code-yeongyu/perplexity-advanced-mcp --client claude
+```
+
 ### Quick Start with [uvx](https://docs.astral.sh/uv/guides/tools/)
 
 The easiest way to run the MCP server is using [uvx](https://docs.astral.sh/uv/guides/tools/):
@@ -167,4 +176,3 @@ Contributions are welcome! Please follow the existing code style and commit guid
 ## License
 
 This project is licensed under the MIT License.
-

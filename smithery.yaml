@@ -1,0 +1,21 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - apiKey
+      - apiType
+    properties:
+      apiKey:
+        type: string
+        description: API key for either OpenRouter or Perplexity.
+      apiType:
+        type: string
+        description: "Specifies which API to use: openrouter or perplexity."
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'perplexity-advanced-mcp', args: [`-${config.apiType === 'openrouter' ? 'o' : 'p'}`, config.apiKey] })
