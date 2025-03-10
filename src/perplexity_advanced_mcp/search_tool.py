@@ -210,11 +210,10 @@ async def ask_perplexity(
 
     # Add reasoning if available
     reasoning = response.get("reasoning")
-    if reasoning is not None:
-        result += f"<think>\n{reasoning}\n</think>\n\n"
+    answer = response.get("content", "")
 
-    # Add answer
-    content = response.get("content", "")
-    result += f"<answer>\n{content}\n</answer>"
+    reasoning_text = f"<think>\n{reasoning}\n</think>\n\n" if reasoning else ""
+    answer_text = f"<answer>\n{answer}\n</answer>"
 
+    result += reasoning_text + answer_text
     return result
