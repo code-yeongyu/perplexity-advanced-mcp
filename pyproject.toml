@@ -9,7 +9,7 @@ Built with AI-first development approach using Cline, Cursor, and Wispr Flow.
 authors = [{ name = "YeonGyu Kim", email = "public.kim.yeon.gyu@gmail.com" }]
 dependencies = [
     "httpx>=0.28.1",
-    "mcp>=1.2.1",
+    "mcp>=1.3.0",
     "pydantic>=2.10.6",
     "setuptools>=75.8.0",
     "typer>=0.15.1",
