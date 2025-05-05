@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/code-yeongyu-perplexity-advanced-mcp-badge.png)](https://mseep.ai/app/code-yeongyu-perplexity-advanced-mcp)
+
 <div align="center">
 
 # Perplexity Advanced MCP
